@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,600;1,200&display=swap');
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    display: flex;
+    height: 100vh;
+    width: 100vw;
+}
+.card{
+    display: flex;
+    align-items: center;
+    height: 20%;
+    width: 30%;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    margin: 20px;
+    padding: 0;
+    transition: .2s;
+}
+.card > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.card:hover{
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: 0.2s;
+}
+.title{
+    font-size: 20px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 300px;
+    
+}
+
+.bg-darK{
+    opacity: 0.2;
+}
+
+@media (min-width: 768px) {
+    .card{
+        width: 20%;
+    }
+    .title{
+        height: 200px;
+    }
+}
+
+@media (min-width: 468px){
+    .card{
+        width: 40%;
+    }
+    .title{
+        height: 200px;
+    }
+}

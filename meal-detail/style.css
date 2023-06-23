@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,300;0,600;1,200&display=swap');
+
+*,*::after,*::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+body > a {
+    text-decoration: none;
+    color: rgb(225, 199, 0);
+}
+* > h1,h2,h3 {
+    font-weight: 600;
+}
+.container{
+    display: flex;
+    width: 100vw;
+    font-weight: 400;
+    height: 100%;
+    flex-direction: column;
+}
+.meal-name > h1 {
+    font-weight: 600;
+}
+.column{
+    width: 40%;
+    flex-direction: column;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+.img-detail{
+    display: flex;
+    width: 40%;
+    height: 60%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+.text-category{
+    opacity: 70%;
+}
+.navigator {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    justify-content: space-between;
+    margin-left: 6rem;
+}
+.navigator > h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+.meal-name{
+    display: flex;
+    flex-direction: row;
+    width: 30%;
+    margin-top: 1rem;
+}
+
+@media screen and (min-width : 768px ) and (max-width : 800px) {
+    .container{
+        margin-top: 0;
+    }
+    .navigator {
+        margin-left: 3rem;
+    }
+    .ingredients {
+        margin-left: 3rem;
+        margin-top: .4rem;
+    }
+    .ingredients > h3{
+        margin-left: 1rem;
+        margin-top: 4.4rem;
+    }
+    .instructions > h1 {
+        margin-bottom: 1.3rem;
+    }
+    .row{
+        margin-bottom: 5rem;
+    }
+    .embed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .embed > iframe{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .meals-detail{
+        margin-top: 0;
+    }
+}
+
+@media (min-width : 468px) {
+    .container{
+        margin-top: 0;
+    }
+    .navigator {
+        margin-left: 3rem;
+    }
+    .ingredients {
+        margin-left: 3rem;
+        margin-top: .4rem;
+    }
+    .ingredients > h3{
+        margin-left: 1rem;
+        margin-top: 4.4rem;
+    }
+    .instructions > h1 {
+        margin-bottom: 1.3rem;
+    }
+    .row{
+        display: flex;
+        margin-bottom: 5rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .row > .column{
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+    .row > h1 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .embed{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .embed > iframe{
+        width: 100%;
+        margin-top: 1.5rem;
+    }
+    .meals-detail{
+        margin-top: 0;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+    .instructions{
+        margin-top: 0;
+        margin-left: 1.3rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .meal-name{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .instructions {
+        margin-top: 0;
+    }
+    .navigator {
+        margin-left: 2rem;
+        height: fit-content;
+    }
+}
